@@ -7,7 +7,7 @@ class FruitContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fruitsToDisplay: this.props.fruits,
+      fruitsToDisplay: props.fruits,
       filterValue: ''
     };
   }
@@ -22,6 +22,8 @@ class FruitContainer extends Component {
   };
 
   render() {
+    console.log(this.props.fruits);
+    console.log(this.state.fruitsToDisplay);
     return (
       <div>
         <Input
