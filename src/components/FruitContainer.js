@@ -24,8 +24,7 @@ class FruitContainer extends Component {
   render() {
     return (
       <div>
-        <input
-          type="text"
+        <Input
           value={this.state.filterValue}
           onChange={this.handleFilterChange}
         />
